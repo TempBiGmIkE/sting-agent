@@ -8,11 +8,13 @@ const Content = () => {
       <ContentSection>
         <TextWrapper>
           <Text>
-            Great stories don’t just happen—
+            STINGINC didn’t just happen—
             <br />
-            they need to be uncovered. And we dig deep to discover the great
-            stories that lie just below the surface. Dirt under our fingernails
-            and all.
+            its was inevitable formed as a reaction to the fear of tomorrow
+            (from the gatekeepers). While the world clings to the old, we are
+            engineering the new power. The ~Youth~ are taking over—are you with
+            us or in the way?
+            <br /> we are on a mission to change culture. Change is coming......
           </Text>
         </TextWrapper>
       </ContentSection>

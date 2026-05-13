@@ -5,9 +5,9 @@ import StickyCursor from '../StickyCursor';
 import { Container, Link } from './styles';
 
 const medias = [
-  { component: Instagram, url: 'https://www.instagram.com/furrowstudio/' },
-  { component: Facebook, url: 'https://www.facebook.com/furrowstudio/' },
-  { component: Vimeo, url: 'https://vimeo.com/furrow' },
+  { component: Instagram, url: 'https://www.instagram.com/stinginc_/' },
+  { component: Facebook, url: 'https://www.facebook.com/stinginc/' },
+  { component: Vimeo, url: 'https://vimeo.com/stinginc' },
 ];
 
 const SocialMedia = props => {

@@ -13,24 +13,26 @@ const Contact = () => {
         <div className="column">
           <a
             className="contact-text"
-            href="tel:+1.902.417.0634"
+            href="tel:+234.905.841.4196"
             onMouseEnter={addCursorBorder}
             onMouseLeave={removeCursorBorder}
           >
-            +1.902.417.0634
+            +234.905.841.4196
           </a>
           <br />
           <a
             className="contact-text"
-            href="mailto:info@furrow.studio"
+            href="mailto:mgmt@thestinginc.com"
             onMouseEnter={addCursorBorder}
             onMouseLeave={removeCursorBorder}
           >
-            info@furrow.studio
+            mgmt@thestinginc.com
           </a>
         </div>
         <address className="column contact-text">
-          15 Camburhill Ct Unit C<br /> Charlottetown, PE C1E 0E2
+          We have remote Studio Offices In Lagos
+          <br />
+          And globally around the Diaspora
         </address>
         <SocialMedia className="column" />
       </ContactSection>

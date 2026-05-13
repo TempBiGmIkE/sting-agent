@@ -1,15 +1,15 @@
 export default [
   [
-    'Pre-Production',
+    'Strategy & Development',
     [
       'Creative Development',
-      'Writing',
-      'Creative Development',
-      'Writing',
+      'Creative Writing',
       'Storyboards',
       'Art Direction',
       'Creative Direction',
       'Location Scouting',
+      'Influencer & Talent Network',
+      'Content Strategy',
       'Casting',
     ],
   ],
@@ -19,12 +19,22 @@ export default [
       'Principle Photography',
       'Production Management',
       'Crew',
-      'Dailies',
+      'Gear Rental',
       'LTO-Archiving',
     ],
   ],
   [
-    'Post-Production',
+    'Product-Design & Dev',
+    [
+      'User Experience Design',
+      'Graphic Design',
+      'Product Development',
+      'Supplier and manufacturing Network',
+      'Brand design and development of physical products',
+    ],
+  ],
+  [
+    'Post-Production/Design',
     [
       'Colour correction',
       'Offline editing',
@@ -41,11 +51,25 @@ export default [
   [
     'Audio Post-Production',
     [
-      'We work with some amazing partners who provide:',
+      'We work with some amazing membahs who provide:',
       'Sound Design',
       'SFX',
       'Music',
+      'Song writing',
+      'Music scoring',
       'Sound Mix',
+    ],
+  ],
+  [
+    'Products activation & Experiences',
+    [
+      'Experiential activations/marketing',
+      'Event production',
+      'Brand activations',
+      'Space design & set build',
+      'Sponsorship alignment and management',
+      'talent booking and management',
+      'Experiential content production',
     ],
   ],
 ];

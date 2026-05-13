@@ -35,8 +35,8 @@ export const BannerTitle = styled(motion.h1)`
   position: absolute;
   bottom: -93px;
   left: -20px;
-  font-size: 420px;
-  font-size: 26.25rem;
+  font-size: 320px;
+  // font-size: 26.25rem;
   pointer-events: none;
   line-height: 0.6714285714;
 
