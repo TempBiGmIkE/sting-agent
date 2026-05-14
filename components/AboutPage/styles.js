@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import { media } from '../../styles/media';
-import { Container } from '../../styles/shared/container';
+import media from '../../styles/media';
+import containerStyles from '../../styles/shared/container';
 
-export const PageContainer = styled(Container)`
+export const PageContainer = styled.div`
+  ${containerStyles}
   padding: 80px 0;
 
   ${media.tablet`
