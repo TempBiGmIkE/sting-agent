@@ -147,7 +147,7 @@ const Menu = () => {
                 onMouseEnter={addCursorBorder}
                 onMouseLeave={removeCursorBorder}
               >
-                info@furrow.studio
+                info@thestinginc.com
               </FooterText>
               <FooterText
                 className="link"
