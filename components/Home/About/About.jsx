@@ -38,8 +38,8 @@ const About = () => {
         <TextWrapper>
           <h2>
             Stinginc is an integrated, full-service creative studio offering
-            video production, creative development, and post-production
-            services.
+            video production, creative development, experiential activation, and
+            post-production services.
           </h2>
           <p>
             Everyone’s got a story. And we don’t stop till we’ve uncovered what
