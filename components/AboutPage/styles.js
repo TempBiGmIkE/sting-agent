@@ -215,7 +215,7 @@ export const TeamMemberCard = styled.div`
   position: relative;
   z-index: 0;
   padding: 12px 0;
-  cursor: default;
+  cursor: pointer;
   overflow: visible;
   transition: color 0.2s ease;
 
@@ -241,6 +241,7 @@ export const TeamMemberCard = styled.div`
 
   &:hover {
     z-index: 5;
+    opacity: 0.8;
   }
 
   &:hover::after {
@@ -304,4 +305,214 @@ export const ContactLink = styled.a`
   font-size: 0.95rem;
   color: ${props => props.theme.colors?.black || '#000'};
   text-decoration: underline;
+`;
+
+// Modal Styles
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+
+const slideUp = keyframes`
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
+
+export const ModalOverlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: ${fadeIn} 0.3s ease;
+  overflow-y: auto;
+  padding: 40px 20px;
+
+  ${media.mobile`
+    padding: 20px;
+  `}
+`;
+
+export const ModalContent = styled.div`
+  background: ${props => props.theme.colors?.red || '#EA281E'};
+  color: ${props => props.theme.colors?.black || '#000'};
+  border-radius: 12px;
+  padding: 48px;
+  max-width: 900px;
+  width: 100%;
+  animation: ${slideUp} 0.3s ease;
+  position: relative;
+
+  ${media.tablet`
+    padding: 40px;
+  `}
+
+  ${media.mobile`
+    padding: 32px 24px;
+  `}
+`;
+
+export const ModalCloseButton = styled.button`
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: ${props => props.theme.colors?.black || '#000'};
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+`;
+
+export const ModalHeader = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 48px;
+  align-items: start;
+
+  ${media.tablet`
+    gap: 32px;
+    grid-template-columns: 1fr;
+  `}
+`;
+
+export const ModalImageSection = styled.div`
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+`;
+
+export const ModalInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`;
+
+export const ModalName = styled.h2`
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin: 0;
+  font-weight: 700;
+  font-family: 'Presicav', sans-serif;
+  line-height: 1.2;
+`;
+
+export const ModalRole = styled.p`
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+`;
+
+export const ModalBio = styled.p`
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 8px 0 0;
+  opacity: 0.95;
+`;
+
+export const ModalSection = styled.section`
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  ${media.mobile`
+    margin-bottom: 24px;
+  `}
+`;
+
+export const ModalSectionTitle = styled.h3`
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: 'Presicav', sans-serif;
+`;
+
+export const ModalWorksList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+`;
+
+export const ModalWorkItem = styled.li`
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding-left: 24px;
+  position: relative;
+
+  &::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+  }
+`;
+
+export const ModalLinksContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+`;
+
+export const ModalLink = styled.a`
+  display: inline-block;
+  padding: 8px 16px;
+  background: ${props => props.theme.colors?.black || '#000'};
+  color: ${props => props.theme.colors?.red || '#EA281E'};
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+
+  &:hover {
+    background: transparent;
+    color: ${props => props.theme.colors?.black || '#000'};
+    border-color: ${props => props.theme.colors?.black || '#000'};
+  }
+`;
+
+export const ModalDownloadLink = styled(ModalLink)`
+  background: ${props => props.theme.colors?.black || '#000'};
 `;

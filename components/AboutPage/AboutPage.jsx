@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AnimateOnScreen from '../AnimateOnScreen';
+import TeamMemberModal from './TeamMemberModal';
 import servicesItems from '../../utils/constants/services-items';
 import teamMembers from '../../utils/constants/team-membahs';
 import {
@@ -31,6 +32,19 @@ import {
 } from './styles';
 
 const AboutPage = () => {
+  const [selectedMember, setSelectedMember] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleMemberClick = member => {
+    setSelectedMember(member);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setTimeout(() => setSelectedMember(null), 300);
+  };
+
   return (
     <PageContainer>
       <AnimateOnScreen>
@@ -105,7 +119,11 @@ const AboutPage = () => {
             <TeamColumn key={group.group}>
               <GroupHeading>{group.group}</GroupHeading>
               {group.members.map(member => (
-                <TeamMemberCard key={member.name} avatar={member.image}>
+                <TeamMemberCard
+                  key={member.id}
+                  avatar={member.image}
+                  onClick={() => handleMemberClick(member)}
+                >
                   <TeamMemberName>{member.name}</TeamMemberName>
                   <TeamMemberRole>{member.role}</TeamMemberRole>
                 </TeamMemberCard>
@@ -136,6 +154,12 @@ const AboutPage = () => {
           </ContactRow>
         </ContactSection>
       </AnimateOnScreen>
+
+      <TeamMemberModal
+        member={selectedMember}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </PageContainer>
   );
 };
