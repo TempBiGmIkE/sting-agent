@@ -36,13 +36,15 @@ export const BannerTitle = styled(motion.h1)`
   bottom: -93px;
   left: -20px;
   font-size: 300px;
-  // font-size: 26.25rem;
   pointer-events: none;
   line-height: 0.6714285714;
+  max-width: calc(100% + 20px);
 
   & span {
     display: block;
     will-change: transform;
+    white-space: normal;
+    word-break: break-word;
   }
 
   ${({ theme }) => theme.breakpoints.small`
@@ -57,9 +59,19 @@ export const BannerTitle = styled(motion.h1)`
     left: -6px;
     bottom: -36px;
     max-width: calc(100% + 6px);
-    font-size: 160px;
-    font-size: 10rem;
-    line-height: .68125;
+    font-size: clamp(6rem, 18vw, 10rem);
+    line-height: .72;
+    overflow: hidden;
+  `};
+
+  ${({ theme }) => theme.breakpoints.mobile`
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 18px;
+    max-width: 100%;
+    font-size: clamp(4.5rem, 22vw, 7rem);
+    line-height: 0.95;
     overflow: hidden;
   `};
 `;
