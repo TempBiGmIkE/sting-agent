@@ -79,7 +79,7 @@ const AppBar = props => {
           </StyledLink>
         </Link>
         <MenuWrapper>
-          <MenuButton title="Membahs" />
+          <MenuButton title="STINGSHII" />
         </MenuWrapper>
       </Container>
     </Slider>
