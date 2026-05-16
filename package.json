@@ -2,11 +2,11 @@
   "name": "awwwards-rebuilt-furrow",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
+ "scripts": {
+  "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
+  "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+  "start": "NODE_OPTIONS=--openssl-legacy-provider next start"
+},
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"

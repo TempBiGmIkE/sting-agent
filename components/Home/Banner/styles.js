@@ -35,7 +35,7 @@ export const BannerTitle = styled(motion.h1)`
   position: absolute;
   bottom: -93px;
   left: -20px;
-  font-size: 300px;
+  font-size: 220px;
   pointer-events: none;
   line-height: 0.6714285714;
   max-width: calc(100% + 20px);
@@ -68,10 +68,14 @@ export const BannerTitle = styled(motion.h1)`
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 0 18px;
+    padding: 0 12px;
     max-width: 100%;
-    font-size: clamp(4.5rem, 22vw, 7rem);
-    line-height: 0.95;
+    font-size: clamp(2rem, 12vw, 4rem);
+    line-height: 0.9;
     overflow: hidden;
+    white-space: normal;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    hyphens: none;
   `};
 `;

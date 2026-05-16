@@ -19,50 +19,54 @@ export const PageContainer = styled.div`
 `;
 
 export const HeroSection = styled.section`
-  padding: 40px 0 60px;
+  padding: 60px 0 80px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+  overflow: hidden;
 
   ${media.mobile`
-    margin-bottom: 40px;
-    padding: 30px 0 40px;
+        padding: 50px 0 60px;
+        margin-bottom: 60px;
   `}
 `;
 
 export const HeroTitle = styled.h1`
-  font-size: clamp(2.5rem, 5vw, 7.5rem);
-  line-height: 0.95;
-  margin: 0 0 36px;
-  max-width: 980px;
+  font-size: clamp(1.75rem, 8vw, 6rem);
+  line-height: 1.15;
+  margin: 0 0 48px;
+  max-width: 100%;
   font-weight: 700;
   font-family: 'Presicav', sans-serif;
   letter-spacing: -0.04em;
 
   ${media.tablet`
-    font-size: clamp(3.5rem, 12vw, 6rem);
-    margin-bottom: 28px;
+        font-size: clamp(1.5rem, 6vw, 4rem);
+        margin-bottom: 36px;
+        line-height: 1.2;
   `}
 
   ${media.mobile`
-    font-size: clamp(3rem, 16vw, 4.5rem);
-    margin-bottom: 24px;
+        font-size: clamp(1.25rem, 7vw, 2.5rem);
+        margin-bottom: 28px;
+        line-height: 1.25;
   `}
 `;
 
 export const HeroIntro = styled.p`
-  font-size: 1.3rem;
-  max-width: 820px;
-  line-height: 1.5;
+  font-size: clamp(0.95rem, 2.5vw, 1.3rem);
+  max-width: 900px;
+  line-height: 1.6;
   margin: 0;
   font-family: 'Presicav', sans-serif;
 
   ${media.tablet`
-    font-size: 1.05rem;
+        font-size: clamp(0.9rem, 2vw, 1.1rem);
+        line-height: 1.65;
   `}
 
   ${media.mobile`
-    font-size: 1rem;
-    line-height: 1.6;
+        font-size: clamp(0.85rem, 2.5vw, 1rem);
+        line-height: 1.7;
   `}
 `;
 

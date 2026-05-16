@@ -20,7 +20,7 @@ export default [
   {
     id: 'bleeping-easy',
     title: 'STING COLLECTIVE',
-    path: '/projects/bleeping-easy',
+    path: '/sting-collective',
     video: 'easy.mp4',
   },
   {

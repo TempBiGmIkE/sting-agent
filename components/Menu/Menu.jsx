@@ -40,7 +40,7 @@ const Menu = () => {
   const [revealVideo, setRevealVideo] = React.useState(null);
   const [isHovering, setIsHovering] = React.useState(false);
   const theme = useStyledTheme();
-  const [{ isMenuOpen }] = useMenuContext();
+  const [{ isMenuOpen }, dispatch] = useMenuContext();
   const {
     addCursorBorder,
     removeCursorBorder,
@@ -123,6 +123,7 @@ const Menu = () => {
                         name={route.id}
                         onHoverStart={handleHoverStart}
                         onHoverEnd={handleHoverEnd}
+                        onClick={() => dispatch({ type: 'TOGGLE_MENU' })}
                         custom={{ isMobile, color: theme.text }}
                         initial="initial"
                         whileHover="hover"

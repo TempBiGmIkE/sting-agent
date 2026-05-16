@@ -26,14 +26,14 @@ export const TextWrapper = styled.div`
   & h2 {
     margin: 0;
     margin-bottom: 44px;
-    max-width: 600px;
+    max-width: 780px;
     font-size: 2.625rem;
     line-height: 1;
     font-weight: 500;
   }
 
   & p {
-    max-width: 448px;
+    max-width: 648px;
     margin: 6.9px 0;
     line-height: 1.2777777778;
   }

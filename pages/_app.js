@@ -11,6 +11,8 @@ import AppBar from '../components/AppBar';
 import Cursor from '../components/Cursor';
 import Menu from '../components/Menu';
 import SiteOfTheDay from '../components/SiteOfTheDay';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 
 const themes = {
   dark: darkTheme,
@@ -32,6 +34,22 @@ const ThemedApp = ({ children }) => {
 const Header = () => <AppBar direction="down" renderAs="header" />;
 
 const App = ({ Component, pageProps }) => {
+  const router = useRouter();
+
+  const pageVariants = {
+    initial: { opacity: 0, x: 50 },
+    enter: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+    },
+    exit: {
+      opacity: 0,
+      x: -50,
+      transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] },
+    },
+  };
+
   return (
     <>
       <Head>
@@ -64,7 +82,20 @@ const App = ({ Component, pageProps }) => {
             <ThemedApp>
               <Header />
               <Menu />
-              <Component {...pageProps} />
+              <div style={{ position: 'relative' }}>
+                <AnimatePresence exitBeforeEnter initial={false}>
+                  <motion.div
+                    key={router.pathname}
+                    initial="initial"
+                    animate="enter"
+                    exit="exit"
+                    variants={pageVariants}
+                    style={{ position: 'absolute', width: '100%' }}
+                  >
+                    <Component {...pageProps} />
+                  </motion.div>
+                </AnimatePresence>
+              </div>
               <Cursor />
               <SiteOfTheDay />
             </ThemedApp>
