@@ -18,6 +18,12 @@ export default [
     video: 'easy.mp4',
   },
   {
+    id: 'sting-saloon',
+    title: 'STING SALOON',
+    path: '/sting-saloon',
+    video: 'easy.mp4',
+  },
+  {
     id: 'bleeping-easy',
     title: 'STING COLLECTIVE',
     path: '/sting-collective',

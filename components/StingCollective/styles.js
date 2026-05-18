@@ -92,9 +92,13 @@ export const MembahGridWrapper = styled.div`
   gap: 18px;
   margin-top: 18px;
 
-  @media (max-width: 900px) {
+  ${({ theme }) => theme.breakpoints.small`
     grid-template-columns: repeat(2, 1fr);
-  }
+  `}
+
+  ${({ theme }) => theme.breakpoints.mobile`
+    grid-template-columns: 1fr;
+  `}
 `;
 
 export const MembahCard = styled.div`
