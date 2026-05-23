@@ -22,6 +22,56 @@ import {
 } from './styles';
 import MembahGrid from './MembahGrid';
 
+// const WorkWithUsModal = ({ isOpen, onClose }) => {
+//   if (!isOpen) return null;
+
+//   return (
+//     <div
+//       style={{
+//         position: 'fixed',
+//         top: 0,
+//         left: 0,
+//         width: '100vw',
+//         height: '100vh',
+//         backgroundColor: 'rgba(0, 0, 0, 0.75)',
+//         display: 'flex',
+//         alignItems: 'center',
+//         justifyContent: 'center',
+//         zIndex: 1000,
+//         padding: '1rem',
+//       }}
+//     >
+//       <div
+//         style={{
+//           backgroundColor: '#fff',
+//           borderRadius: '20px',
+//           maxWidth: '540px',
+//           width: '100%',
+//           padding: '2rem',
+//           boxShadow: '0 30px 60px rgba(0, 0, 0, 0.25)',
+//         }}
+//       >
+//         <h2 style={{ marginTop: 0 }}>Work With Us</h2>
+//         <p>
+//           We’re always seeking ambitious collaborators, creative partners, and
+//           brands to build with. Share your interests, projects, or partnership
+//           ideas and we’ll connect with you.
+//         </p>
+//         <p>
+//           Reach out at{' '}
+//           <a href="mailto:inquiries@stinginc.com">inquiries@stinginc.com</a>
+//           {' '}or send us a note through our contact channels.
+//         </p>
+//         <div style={{ marginTop: '1.5rem', textAlign: 'right' }}>
+//           <ActionButton as="button" type="button" onClick={onClose}>
+//             Close
+//           </ActionButton>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
 const StingCollective = () => {
   return (
     <Page>
@@ -68,7 +118,7 @@ const StingCollective = () => {
                 <BenefitItem>Invitations to closed studio sessions</BenefitItem>
               </BenefitsList>
               <TierActions>
-                <ActionButton href="#">Register</ActionButton>
+                {/* <ActionButton href="#">Register</ActionButton> */}
                 <ActionButton href="#">Login</ActionButton>
               </TierActions>
             </TierCard>
@@ -76,7 +126,7 @@ const StingCollective = () => {
             <TierCard>
               <TierTitle>Membahs</TierTitle>
               <TierSubtitle>
-                Paid members with access to drops and events.
+                Invite only members with access to drops and events.
               </TierSubtitle>
               <BenefitsList>
                 <BenefitItem>Early access to releases</BenefitItem>

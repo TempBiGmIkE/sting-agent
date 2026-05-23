@@ -204,7 +204,11 @@ export const SessionBookingGrid = styled.div`
 
 export const SessionCard = styled.div`
   padding: 32px;
-  background: linear-gradient(135deg, rgba(255, 0, 0, 0.1) 0%, rgba(255, 0, 0, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 0, 0, 0.1) 0%,
+    rgba(255, 0, 0, 0.05) 100%
+  );
   border: 1px solid ${props => props.theme.colors.red};
   border-radius: 12px;
   cursor: pointer;
@@ -276,9 +280,9 @@ export const BeatPackGrid = styled.div`
 
     ${media.mobile`
       grid-template-columns: 1fr;
-      `}
-      `}
-      `;
+    `}
+  `}
+`;
 
 export const BeatPackCard = styled.div`
   position: relative;
@@ -303,7 +307,6 @@ export const BeatPackCard = styled.div`
     }
   }
 `;
-
 
 export const BeatPackContent = styled.div`
   position: relative;
@@ -401,7 +404,11 @@ export const ArtistPortfolio = styled.div`
 
 export const PortfolioItem = styled.div`
   aspect-ratio: 1;
-  background: linear-gradient(135deg, rgba(255, 0, 0, 0.2) 0%, rgba(255, 0, 0, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 0, 0, 0.2) 0%,
+    rgba(255, 0, 0, 0.05) 100%
+  );
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 20px;
@@ -413,7 +420,11 @@ export const PortfolioItem = styled.div`
 
   &:hover {
     border-color: ${props => props.theme.colors.red};
-    background: linear-gradient(135deg, rgba(255, 0, 0, 0.3) 0%, rgba(255, 0, 0, 0.1) 100%);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 0, 0, 0.3) 0%,
+      rgba(255, 0, 0, 0.1) 100%
+    );
     transform: translateY(-8px);
   }
 `;

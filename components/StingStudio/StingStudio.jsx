@@ -53,28 +53,48 @@ const featuredSessions = [
     type: 'Production',
     title: 'Full Track Production',
     duration: '4-6 Hours',
-    includes: ['Studio Time', 'Beat Production', 'Recording Setup', 'Basic Mix'],
+    includes: [
+      'Studio Time',
+      'Beat Production',
+      'Recording Setup',
+      'Basic Mix',
+    ],
   },
   {
     id: 2,
     type: 'Mixing',
     title: 'Professional Mixing Session',
     duration: '2-3 Hours',
-    includes: ['Mixing Expertise', 'Sound Design', 'Arrangement', 'Vocal Effects'],
+    includes: [
+      'Mixing Expertise',
+      'Sound Design',
+      'Arrangement',
+      'Vocal Effects',
+    ],
   },
   {
     id: 3,
     type: 'Collaboration',
     title: 'Artist Collaboration Day',
     duration: '6-8 Hours',
-    includes: ['Co-Writing', 'Production', 'Feature Recording', 'Creative Direction'],
+    includes: [
+      'Co-Writing',
+      'Production',
+      'Feature Recording',
+      'Creative Direction',
+    ],
   },
   {
     id: 4,
     type: 'Mentorship',
     title: 'Artist Development Session',
     duration: '2 Hours',
-    includes: ['Branding Consultation', 'Career Guidance', 'Portfolio Review', 'Growth Strategy'],
+    includes: [
+      'Branding Consultation',
+      'Career Guidance',
+      'Portfolio Review',
+      'Growth Strategy',
+    ],
   },
 ];
 
@@ -123,15 +143,6 @@ const beatPacks = [
   },
 ];
 
-const collaborationFeatures = [
-  'Connect with producers, engineers, and fellow artists',
-  'Share works-in-progress and get real-time feedback',
-  'Discover trending sounds and production techniques',
-  'Build your creative network and fanbase simultaneously',
-  'Access mentorship from industry professionals',
-  'Collaborate on exclusive remix and feature projects',
-];
-
 const portfolioTracks = [
   { artist: 'Luna Echo', track: 'Midnight Dreams', plays: 2400 },
   { artist: 'Studio Beats', track: 'Electric Pulse', plays: 1800 },
@@ -152,10 +163,10 @@ const StingStudio = () => (
             The Creative Hub Where Artists Converge, Collaborate, and Conquer
           </HeroTitle>
           <HeroText>
-            Sting Studio is your complete platform for artist development, session
-            booking, creative collaboration, and music marketing. Book sessions,
-            discover collaborators, refine your branding, and let your unreleased
-            music work for you 24/7.
+            Sting Studio is your complete platform for artist development,
+            session booking, creative collaboration, and music marketing. Book
+            sessions, discover collaborators, refine your branding, and let your
+            unreleased music work for you 24/7.
           </HeroText>
           <HeroActions>
             <PrimaryButton href="#book">Book Session</PrimaryButton>
@@ -171,17 +182,60 @@ const StingStudio = () => (
             style={{ maxWidth: '400px', maxHeight: '400px' }}
           >
             <defs>
-              <linearGradient id="studioGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style={{ stopColor: '#FF0000', stopOpacity: 0.8 }} />
-                <stop offset="100%" style={{ stopColor: '#FF0000', stopOpacity: 0.2 }} />
+              <linearGradient
+                id="studioGrad"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop
+                  offset="0%"
+                  style={{ stopColor: '#FF0000', stopOpacity: 0.8 }}
+                />
+                <stop
+                  offset="100%"
+                  style={{ stopColor: '#FF0000', stopOpacity: 0.2 }}
+                />
               </linearGradient>
             </defs>
             {/* Stylized studio icon */}
-            <circle cx="250" cy="250" r="200" fill="url(#studioGrad)" opacity="0.1" />
-            <circle cx="250" cy="250" r="180" stroke="#FF0000" strokeWidth="2" fill="none" opacity="0.3" />
-            <rect x="150" y="150" width="200" height="200" fill="none" stroke="#FF0000" strokeWidth="2" opacity="0.5" />
+            <circle
+              cx="250"
+              cy="250"
+              r="200"
+              fill="url(#studioGrad)"
+              opacity="0.1"
+            />
+            <circle
+              cx="250"
+              cy="250"
+              r="180"
+              stroke="#FF0000"
+              strokeWidth="2"
+              fill="none"
+              opacity="0.3"
+            />
+            <rect
+              x="150"
+              y="150"
+              width="200"
+              height="200"
+              fill="none"
+              stroke="#FF0000"
+              strokeWidth="2"
+              opacity="0.5"
+            />
             <circle cx="250" cy="250" r="50" fill="#FF0000" opacity="0.3" />
-            <circle cx="250" cy="250" r="40" stroke="#FF0000" strokeWidth="2" fill="none" opacity="0.6" />
+            <circle
+              cx="250"
+              cy="250"
+              r="40"
+              stroke="#FF0000"
+              strokeWidth="2"
+              fill="none"
+              opacity="0.6"
+            />
           </svg>
         </HeroVisual>
       </Hero>
@@ -191,50 +245,80 @@ const StingStudio = () => (
     <AnimateOnScreen>
       <FeatureGrid>
         <FeatureCard>
-          <FeatureIcon>🎵</FeatureIcon>
+          <FeatureIcon>
+            <span role="img" aria-label="Musical note">
+              🎵
+            </span>
+          </FeatureIcon>
           <FeatureTitle>Book Sessions</FeatureTitle>
           <FeatureDescription>
-            Reserve studio time with top producers and engineers tailored to your project needs.
+            Reserve studio time with top producers and engineers tailored to
+            your project needs.
           </FeatureDescription>
         </FeatureCard>
 
         <FeatureCard>
-          <FeatureIcon>🤝</FeatureIcon>
+          <FeatureIcon>
+            <span role="img" aria-label="Handshake">
+              🤝
+            </span>
+          </FeatureIcon>
           <FeatureTitle>Collaborate</FeatureTitle>
           <FeatureDescription>
-            Connect with creatives worldwide. Build relationships that lead to breakthrough projects.
+            Connect with creatives worldwide. Build relationships that lead to
+            breakthrough projects.
           </FeatureDescription>
         </FeatureCard>
 
         <FeatureCard>
-          <FeatureIcon>🎨</FeatureIcon>
+          <FeatureIcon>
+            <span role="img" aria-label="Artist palette">
+              🎨
+            </span>
+          </FeatureIcon>
           <FeatureTitle>Artist Development</FeatureTitle>
           <FeatureDescription>
-            Get expert guidance on branding, direction, and strategic career growth from industry leaders.
+            Get expert guidance on branding, direction, and strategic career
+            growth from industry leaders.
           </FeatureDescription>
         </FeatureCard>
 
         <FeatureCard>
-          <FeatureIcon>🎧</FeatureIcon>
+          <FeatureIcon>
+            <span role="img" aria-label="Headphones">
+              🎧
+            </span>
+          </FeatureIcon>
           <FeatureTitle>Beat Packs</FeatureTitle>
           <FeatureDescription>
-            Access curated beat collections across genres to inspire and jumpstart your creative process.
+            Access curated beat collections across genres to inspire and
+            jumpstart your creative process.
           </FeatureDescription>
         </FeatureCard>
 
         <FeatureCard>
-          <FeatureIcon>📁</FeatureIcon>
+          <FeatureIcon>
+            <span role="img" aria-label="File folder">
+              📁
+            </span>
+          </FeatureIcon>
           <FeatureTitle>Media Management</FeatureTitle>
           <FeatureDescription>
-            Store, organize, and share session files, recordings, and project assets securely in one place.
+            Store, organize, and share session files, recordings, and project
+            assets securely in one place.
           </FeatureDescription>
         </FeatureCard>
 
         <FeatureCard>
-          <FeatureIcon>📈</FeatureIcon>
+          <FeatureIcon>
+            <span role="img" aria-label="Chart increasing">
+              📈
+            </span>
+          </FeatureIcon>
           <FeatureTitle>Music Marketing</FeatureTitle>
           <FeatureDescription>
-            Let your unreleased tracks market your brand 24/7. Gain discovery while you create.
+            Let your unreleased tracks market your brand 24/7. Gain discovery
+            while you create.
           </FeatureDescription>
         </FeatureCard>
       </FeatureGrid>
@@ -245,7 +329,8 @@ const StingStudio = () => (
       <Section>
         <SectionTitle>Book Your Perfect Session</SectionTitle>
         <SectionSubtitle>
-          Choose from diverse session types designed to meet artists at every stage of their journey.
+          Choose from diverse session types designed to meet artists at every
+          stage of their journey.
         </SectionSubtitle>
 
         <SessionBookingGrid>
@@ -268,7 +353,8 @@ const StingStudio = () => (
       <Section>
         <SectionTitle>Curated Beat Packs</SectionTitle>
         <SectionSubtitle>
-          Explore production-ready beats across genres to fuel your creative vision.
+          Explore production-ready beats across genres to fuel your creative
+          vision.
         </SectionSubtitle>
 
         <BeatPackGrid>
@@ -278,8 +364,18 @@ const StingStudio = () => (
                 <BeatPackGenre>{pack.genre}</BeatPackGenre>
                 <BeatPackTitle>{pack.title}</BeatPackTitle>
                 <BeatPackStats>
-                  <Stat>🎵 {pack.beats} Beats</Stat>
-                  <Stat>💾 {pack.files}</Stat>
+                  <Stat>
+                    <span role="img" aria-label="Musical note">
+                      🎵
+                    </span>
+                    {pack.beats} Beats
+                  </Stat>
+                  <Stat>
+                    <span role="img" aria-label="Floppy disk">
+                      💾
+                    </span>
+                    {pack.files}
+                  </Stat>
                 </BeatPackStats>
               </BeatPackContent>
             </BeatPackCard>
@@ -296,23 +392,55 @@ const StingStudio = () => (
         <CollaborationGrid>
           <CollaborationContent>
             <SectionSubtitle>
-              Where Artists, Producers, and Creatives Converge to Build Tomorrow's Sound
+              Where Artists, Producers, and Creatives Converge to Build
+              Tomorrow&apos;s Sound
             </SectionSubtitle>
             <p style={{ opacity: 0.85, lineHeight: 1.8, marginBottom: '32px' }}>
-              The studio isn't just a place to make music—it's a community of innovators.
-              Connect with like-minded creatives, share your vision, and discover untapped
-              potential in collaboration. Every connection could be your next hit.
+              The studio isn&apos;t just a place to make music&mdash;it&apos;s a
+              community of innovators. Connect with like-minded creatives, share
+              your vision, and discover untapped potential in collaboration.
+              Every connection could be your next hit.
             </p>
           </CollaborationContent>
 
           <div>
             <CollaborationList>
-              {collaborationFeatures.map((feature, idx) => (
-                <CollaborationItem key={idx}>
-                  <CollaborationCheck>✓</CollaborationCheck>
-                  <CollaborationText>{feature}</CollaborationText>
-                </CollaborationItem>
-              ))}
+              <CollaborationItem>
+                <CollaborationCheck>✓</CollaborationCheck>
+                <CollaborationText>
+                  Connect with producers, engineers, and fellow artists
+                </CollaborationText>
+              </CollaborationItem>
+              <CollaborationItem>
+                <CollaborationCheck>✓</CollaborationCheck>
+                <CollaborationText>
+                  Share works-in-progress and get real-time feedback
+                </CollaborationText>
+              </CollaborationItem>
+              <CollaborationItem>
+                <CollaborationCheck>✓</CollaborationCheck>
+                <CollaborationText>
+                  Discover trending sounds and production techniques
+                </CollaborationText>
+              </CollaborationItem>
+              <CollaborationItem>
+                <CollaborationCheck>✓</CollaborationCheck>
+                <CollaborationText>
+                  Build your creative network and fanbase simultaneously
+                </CollaborationText>
+              </CollaborationItem>
+              <CollaborationItem>
+                <CollaborationCheck>✓</CollaborationCheck>
+                <CollaborationText>
+                  Access mentorship from industry professionals
+                </CollaborationText>
+              </CollaborationItem>
+              <CollaborationItem>
+                <CollaborationCheck>✓</CollaborationCheck>
+                <CollaborationText>
+                  Collaborate on exclusive remix and feature projects
+                </CollaborationText>
+              </CollaborationItem>
             </CollaborationList>
           </div>
         </CollaborationGrid>
@@ -324,8 +452,8 @@ const StingStudio = () => (
       <Section>
         <SectionTitle>Artist Development & Direction</SectionTitle>
         <SectionSubtitle>
-          Transform conversations into strategic branding, clear artistic direction, and
-          sustainable career growth.
+          Transform conversations into strategic branding, clear artistic
+          direction, and sustainable career growth.
         </SectionSubtitle>
 
         <CollaborationGrid>
@@ -334,43 +462,49 @@ const StingStudio = () => (
               <CollaborationItem>
                 <CollaborationCheck>→</CollaborationCheck>
                 <CollaborationText>
-                  <strong>Branding Strategy:</strong> Define your visual identity,
-                  sound signature, and market positioning with expert consultants.
+                  <strong>Branding Strategy:</strong> Define your visual
+                  identity, sound signature, and market positioning with expert
+                  consultants.
                 </CollaborationText>
               </CollaborationItem>
               <CollaborationItem>
                 <CollaborationCheck>→</CollaborationCheck>
                 <CollaborationText>
-                  <strong>Career Coaching:</strong> Navigate industry insights, collaborate
-                  with the right people, and build a sustainable music career.
+                  <strong>Career Coaching:</strong> Navigate industry insights,
+                  collaborate with the right people, and build a sustainable
+                  music career.
                 </CollaborationText>
               </CollaborationItem>
               <CollaborationItem>
                 <CollaborationCheck>→</CollaborationCheck>
                 <CollaborationText>
-                  <strong>Portfolio Development:</strong> Curate your best work and
-                  showcase your evolution as a creative to industry professionals.
+                  <strong>Portfolio Development:</strong> Curate your best work
+                  and showcase your evolution as a creative to industry
+                  professionals.
                 </CollaborationText>
               </CollaborationItem>
               <CollaborationItem>
                 <CollaborationCheck>→</CollaborationCheck>
                 <CollaborationText>
-                  <strong>Music Distribution:</strong> From unreleased tracks to finished
-                  releases, manage your catalog and maximize reach across platforms.
+                  <strong>Music Distribution:</strong> From unreleased tracks to
+                  finished releases, manage your catalog and maximize reach
+                  across platforms.
                 </CollaborationText>
               </CollaborationItem>
             </CollaborationList>
           </div>
 
           <CollaborationContent>
-            <h4 style={{ fontSize: '1.3rem', marginBottom: '16px', marginTop: 0 }}>
+            <h4
+              style={{ fontSize: '1.3rem', marginBottom: '16px', marginTop: 0 }}
+            >
               Your Artists Are Talking
             </h4>
             <div style={{ opacity: 0.85, lineHeight: 1.8 }}>
               <p>
-                &quot;The mentorship sessions at Sting Studio completely changed how I approach
-                my music. I went from creating in isolation to building genuine relationships
-                with other producers.&quot;
+                &quot;The mentorship sessions at Sting Studio completely changed
+                how I approach my music. I went from creating in isolation to
+                building genuine relationships with other producers.&quot;
               </p>
               <p>
                 <strong>— Creative Artist, NYC</strong>
@@ -386,8 +520,8 @@ const StingStudio = () => (
       <Section>
         <SectionTitle>Your Music Works 24/7</SectionTitle>
         <SectionSubtitle>
-          Upload unreleased tracks and demos to your portfolio. Your music markets your brand
-          while you create the next masterpiece.
+          Upload unreleased tracks and demos to your portfolio. Your music
+          markets your brand while you create the next masterpiece.
         </SectionSubtitle>
 
         <ArtistPortfolio>
@@ -411,39 +545,55 @@ const StingStudio = () => (
       <Section>
         <SectionTitle>Session Media Hub</SectionTitle>
         <SectionSubtitle>
-          Organize, store, and share all your session files, recordings, and project assets
-          in a centralized, secure platform.
+          Organize, store, and share all your session files, recordings, and
+          project assets in a centralized, secure platform.
         </SectionSubtitle>
 
         <CollaborationGrid>
           <CollaborationContent>
             <CollaborationList>
               <CollaborationItem>
-                <CollaborationCheck>💾</CollaborationCheck>
+                <CollaborationCheck>
+                  <span role="img" aria-label="Floppy disk">
+                    💾
+                  </span>
+                </CollaborationCheck>
                 <CollaborationText>
-                  <strong>Secure Cloud Storage:</strong> All your recordings and project
-                  files backed up and accessible anytime, anywhere.
+                  <strong>Secure Cloud Storage:</strong> All your recordings and
+                  project files backed up and accessible anytime, anywhere.
                 </CollaborationText>
               </CollaborationItem>
               <CollaborationItem>
-                <CollaborationCheck>🔗</CollaborationCheck>
+                <CollaborationCheck>
+                  <span role="img" aria-label="Link">
+                    🔗
+                  </span>
+                </CollaborationCheck>
                 <CollaborationText>
-                  <strong>Easy Sharing:</strong> Generate secure links to share session
-                  files with collaborators and producers.
+                  <strong>Easy Sharing:</strong> Generate secure links to share
+                  session files with collaborators and producers.
                 </CollaborationText>
               </CollaborationItem>
               <CollaborationItem>
-                <CollaborationCheck>📊</CollaborationCheck>
+                <CollaborationCheck>
+                  <span role="img" aria-label="Chart">
+                    📊
+                  </span>
+                </CollaborationCheck>
                 <CollaborationText>
-                  <strong>Organization Tools:</strong> Tag, categorize, and search through
-                  your entire music library instantly.
+                  <strong>Organization Tools:</strong> Tag, categorize, and
+                  search through your entire music library instantly.
                 </CollaborationText>
               </CollaborationItem>
               <CollaborationItem>
-                <CollaborationCheck>✨</CollaborationCheck>
+                <CollaborationCheck>
+                  <span role="img" aria-label="Sparkles">
+                    ✨
+                  </span>
+                </CollaborationCheck>
                 <CollaborationText>
-                  <strong>Version Control:</strong> Keep track of project iterations and
-                  evolve your sound with confidence.
+                  <strong>Version Control:</strong> Keep track of project
+                  iterations and evolve your sound with confidence.
                 </CollaborationText>
               </CollaborationItem>
             </CollaborationList>
@@ -451,13 +601,15 @@ const StingStudio = () => (
 
           <div style={{ opacity: 0.85, lineHeight: 1.8 }}>
             <p>
-              Never lose a session again. With Sting Studio's media hub, every collaboration,
-              every recording, and every creative spark is preserved and organized. Access
-              your entire sonic history with powerful search and tagging capabilities.
+              Never lose a session again. With Sting Studio&apos;s media hub,
+              every collaboration, every recording, and every creative spark is
+              preserved and organized. Access your entire sonic history with
+              powerful search and tagging capabilities.
             </p>
             <p>
-              Collaborate seamlessly with your team. Share session files with one click and
-              track changes as your project evolves. Your creative process, streamlined.
+              Collaborate seamlessly with your team. Share session files with
+              one click and track changes as your project evolves. Your creative
+              process, streamlined.
             </p>
           </div>
         </CollaborationGrid>
@@ -468,8 +620,9 @@ const StingStudio = () => (
     <CTASection>
       <CTATitle>Ready to Transform Your Creative Journey?</CTATitle>
       <CTAText>
-        Join Sting Studio today and become part of a thriving community of artists,
-        producers, and creative visionaries. Let's build something extraordinary together.
+        Join Sting Studio today and become part of a thriving community of
+        artists, producers, and creative visionaries. Let&apos;s build something
+        extraordinary together.
       </CTAText>
       <CTAButtons>
         <PrimaryButton href="#signup">Start Your Journey</PrimaryButton>
