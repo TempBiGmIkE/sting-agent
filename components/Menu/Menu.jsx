@@ -159,7 +159,7 @@ const Menu = () => {
               >
                 +1.902.417.0634
               </FooterText>
-              <FooterText className="copyright">© Furrow 2020</FooterText>
+              <FooterText className="copyright">© Stinginc 2026</FooterText>
               {isMobile && (
                 <Address>
                   <FooterText>

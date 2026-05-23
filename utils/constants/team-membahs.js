@@ -6,7 +6,7 @@ export default [
         id: 'olanipekun-oladapo',
         name: 'Olanipekun Oladapo Micheal',
         role: 'Founder, CEO & Creative Director, Global',
-        image: '/images/team/StingInc-1773010816461119592-01.jpg',
+        image: '/images/team/BMF.jpg',
         bio:
           'Visionary creative leader with over a decade of experience in branding and visual design.',
         recentWorks: [
@@ -46,7 +46,7 @@ export default [
         id: 'adeleke-david',
         name: 'Adeleke David',
         role: 'Video Director & Operations, Global',
-        image: '/images/team/StingInc-1781449811461308743-01.jpg',
+        image: '/images/team/slheem.jpg',
         bio:
           'Award-winning video director specializing in cinematic narratives and visual storytelling.',
         recentWorks: [
@@ -66,7 +66,7 @@ export default [
         id: 'onyeka-david',
         name: 'Onyeka David',
         role: 'Product & UX Lead',
-        image: '/images/team/StingInc-1781450065820676183-01.jpg',
+        image: '/images/team/BMF.jpg',
         bio:
           'Digital product strategist crafting seamless user experiences for global audiences.',
         recentWorks: [
@@ -86,7 +86,7 @@ export default [
         id: 'poopla-david',
         name: 'Poopla David',
         role: 'Motion Director & Event Coordinator, Europe',
-        image: '/images/team/StingInc-1781450270766944386-01.jpg',
+        image: '/images/team/jiggy.jpg',
         bio:
           'Dynamic motion designer and event curator creating immersive brand experiences.',
         recentWorks: [
@@ -106,7 +106,7 @@ export default [
         id: 'chisom-victor',
         name: 'Chisom Victor',
         role: 'Digital & Art Director, Europe',
-        image: '/images/team/StingInc-1784606830020132886-01.jpg',
+        image: '/images/team/ad3.jpg',
         bio:
           'Innovative art director blending traditional and digital mediums for compelling visuals.',
         recentWorks: [
@@ -126,7 +126,7 @@ export default [
         id: 'akinrinlola-adewole',
         name: 'Akinrinlola Adewole Miracle',
         role: 'Head of Music & Sound Engineering, Europe',
-        image: '/images/team/StingInc-1784606830020132886-02.jpg',
+        image: '/images/team/ad3.jpg',
         bio:
           'Master sound engineer and music producer delivering premium audio solutions.',
         recentWorks: [
@@ -146,7 +146,7 @@ export default [
         id: 'adeleke-adejola',
         name: 'Adeleke Adejola',
         role: 'Fashion Lead, Europe',
-        image: '/images/team/StingInc-1784606887574425902-01.jpg',
+        image: '/images/team/aj.jpg',
         bio:
           'Fashion visionary curating style and aesthetic for luxury brand collaborations.',
         recentWorks: [
@@ -168,10 +168,10 @@ export default [
     group: 'Affiliates & Community',
     members: [
       {
-        id: 'theo-park',
+        id: 'SKEPP',
         name: 'Theo Park',
         role: 'Post-Production Lead, Europe',
-        image: '/images/team/StingInc-1784606887574425902-02.jpg',
+        image: '/images/team/skepp.jpg',
         bio:
           'Post-production specialist delivering polished final outputs across all mediums.',
         recentWorks: [
@@ -191,7 +191,7 @@ export default [
         id: 'ava-brooks',
         name: 'Ava Brooks',
         role: 'Experience Designer, Europe',
-        image: '/images/team/StingInc-1843699624651219333-01.jpg',
+        image: '/images/team/shy.jpg',
         bio:
           'Creative experience designer crafting memorable brand interactions.',
         recentWorks: [
@@ -211,7 +211,7 @@ export default [
         id: 'noor-ali',
         name: 'Noor Ali',
         role: 'Creative Producer, Europe',
-        image: '/images/team/StingInc-1843699624651219333-02.jpg',
+        image: '/images/team/cain.jpg',
         bio:
           'Producer coordinating complex creative projects from conception to delivery.',
         recentWorks: [
@@ -229,9 +229,9 @@ export default [
       },
       {
         id: 'rio-grant',
-        name: 'Rio Grant',
+        name: 'The BIG C',
         role: 'Engineering Lead, Europe',
-        image: '/images/team/StingInc-1843699624651219333-03.jpg',
+        image: '/images/team/BIGC.jpg',
         bio:
           'Full-stack engineer building robust digital infrastructure for creative solutions.',
         recentWorks: [
@@ -251,7 +251,7 @@ export default [
         id: 'magnus-mali',
         name: 'Magnus Mali Boy',
         role: 'Community Curator',
-        image: '/images/team/StingInc-1843699647266910330-01.jpg',
+        image: '/images/team/mag.jpg',
         bio:
           'Community leader fostering connections and collaboration within creative spaces.',
         recentWorks: [
@@ -271,7 +271,7 @@ export default [
         id: 'ade-rogba',
         name: 'Ade Rogba',
         role: 'Artist Relations',
-        image: '/images/team/StingInc-1843699647266910330-02.jpg',
+        image: '/images/team/Trench.jpg',
         bio:
           'Artist liaison nurturing relationships and enabling creative collaborations.',
         recentWorks: [
@@ -291,7 +291,7 @@ export default [
         id: 'the-big-c',
         name: 'The Big C',
         role: 'Talent Network Coordinator',
-        image: '/images/team/StingInc-1843699647266910330-03.jpg',
+        image: '/images/team/BIGC.jpg',
         bio:
           'Talent coordinator connecting exceptional creatives with opportunities.',
         recentWorks: [
@@ -311,7 +311,7 @@ export default [
         id: 'imani-cruz',
         name: 'Imani Cruz',
         role: 'Brand Partnership Specialist',
-        image: '/images/team/StingInc-1853512226361287019-01.jpg',
+        image: '/images/team/danio.jpg',
         bio:
           'Partnership strategist building meaningful brand collaborations and alliances.',
         recentWorks: [

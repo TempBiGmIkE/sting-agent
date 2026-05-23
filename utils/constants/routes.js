@@ -24,6 +24,12 @@ export default [
     video: 'easy.mp4',
   },
   {
+    id: 'sting-studio',
+    title: 'STING STUDIO',
+    path: '/sting-studio',
+    video: 'easy.mp4',
+  },
+  {
     id: 'bleeping-easy',
     title: 'STING COLLECTIVE',
     path: '/sting-collective',

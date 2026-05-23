@@ -114,22 +114,41 @@ export const SocialMedia = styled(DefaultSocialMedia)`
 `;
 
 export const Navigation = styled.nav`
-  height: 462px;
+  /* allow the navigation area to scroll when content exceeds viewport */
+  height: auto;
+  max-height: calc(100vh - 160px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-right: 12px; /* room for scrollbar on desktop */
 
   ${({ theme }) => theme.breakpoints.small`
     position: absolute;
     top: 94px;
+    max-height: calc(100vh - 120px);
   `};
 `;
 
 export const List = styled(motion.ul)`
-  display: inline-block;
+  display: block;
+  margin: 0;
+  padding: 0;
 
   & li {
     display: block;
-    overflow: hidden;
-    float: left;
-    clear: left;
+    overflow: visible;
+    float: none;
+    clear: none;
+    list-style: none;
+    margin: 0 0 8px 0;
+  }
+
+  /* ensure long lists don't push layout; allow inner scrolling */
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.2);
+    border-radius: 6px;
   }
 `;
 
