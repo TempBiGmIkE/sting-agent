@@ -41,6 +41,7 @@ import {
   ShopCardContent,
   ShopCardTitle,
   ShopCardMeta,
+  ShopCardButton,
   StorySection,
   StoryGrid,
   StoryText,
@@ -155,7 +156,7 @@ const StingSaloon = () => (
           <SplitCardButton href="#shop">Check It Out</SplitCardButton>
         </SplitCard>
         <SplitCard accent>
-          <SplitCardTitle>Bryce Harper X Sting</SplitCardTitle>
+          <SplitCardTitle>Tiger-cuts X Sting</SplitCardTitle>
           <SplitCardText>
             Best flow in the game — performance and style for every routine.
           </SplitCardText>
@@ -175,17 +176,19 @@ const StingSaloon = () => (
           <ShopCard>
             <ShopCardImage />
             <ShopCardContent>
-              <ShopCardTitle>Amsterdam Saloon</ShopCardTitle>
-              <ShopCardMeta>Downtown ritual house</ShopCardMeta>
+              <ShopCardTitle>The Kitchen</ShopCardTitle>
+              <ShopCardMeta>Akure (our lil amsterdam)</ShopCardMeta>
+              <ShopCardButton href="https://stgsaloon.setmore.com" target="_blank" rel="noopener noreferrer">Book Now</ShopCardButton>
             </ShopCardContent>
           </ShopCard>
           <ShopCard>
             <ShopCardImage secondary />
             <ShopCardContent>
-              <ShopCardTitle>Los Angeles House</ShopCardTitle>
+              <ShopCardTitle> Lagos (Los Angeles House)</ShopCardTitle>
               <ShopCardMeta>
                 Where morning routines meet creative life
               </ShopCardMeta>
+              <ShopCardButton href="https://stgsaloon.setmore.com" target="_blank" rel="noopener noreferrer">Book Now</ShopCardButton>
             </ShopCardContent>
           </ShopCard>
         </ShopsRow>
