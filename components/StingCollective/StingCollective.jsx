@@ -18,7 +18,6 @@ import {
   BenefitsList,
   BenefitItem,
   TierActions,
-  ActionButton,
 } from './styles';
 import MembahGrid from './MembahGrid';
 
@@ -118,8 +117,20 @@ const StingCollective = () => {
                 <BenefitItem>Invitations to closed studio sessions</BenefitItem>
               </BenefitsList>
               <TierActions>
-                {/* <ActionButton href="#">Register</ActionButton> */}
-                <ActionButton href="#">Login</ActionButton>
+                <button
+                  type="button"
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    color: 'inherit',
+                    font: 'inherit',
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                  }}
+                >
+                  Login
+                </button>
               </TierActions>
             </TierCard>
 
@@ -134,8 +145,34 @@ const StingCollective = () => {
                 <BenefitItem>Member-only events and talks</BenefitItem>
               </BenefitsList>
               <TierActions>
-                <ActionButton href="#">Register</ActionButton>
-                <ActionButton href="#">Login</ActionButton>
+                <button
+                  type="button"
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    color: 'inherit',
+                    font: 'inherit',
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                  }}
+                >
+                  Register
+                </button>
+                <button
+                  type="button"
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    color: 'inherit',
+                    font: 'inherit',
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                  }}
+                >
+                  Login
+                </button>
               </TierActions>
             </TierCard>
 
@@ -152,7 +189,20 @@ const StingCollective = () => {
                 </BenefitItem>
               </BenefitsList>
               <TierActions>
-                <ActionButton href="#">Join Newsletter</ActionButton>
+                <button
+                  type="button"
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    color: 'inherit',
+                    font: 'inherit',
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                  }}
+                >
+                  Join Newsletter
+                </button>
               </TierActions>
             </TierCard>
 
@@ -169,7 +219,20 @@ const StingCollective = () => {
                 <BenefitItem>Partner showcase slots</BenefitItem>
               </BenefitsList>
               <TierActions>
-                <ActionButton href="#">Contact Us</ActionButton>
+                <button
+                  type="button"
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    padding: 0,
+                    color: 'inherit',
+                    font: 'inherit',
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                  }}
+                >
+                  Contact Us
+                </button>
               </TierActions>
             </TierCard>
           </TierGrid>

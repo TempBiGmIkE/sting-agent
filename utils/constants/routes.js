@@ -14,7 +14,7 @@ export default [
   {
     id: 'bleeping-easy',
     title: 'STING STORE',
-    path: '/projects/bleeping-easy',
+    path: 'store.thestinginc.com/us',
     video: 'easy.mp4',
   },
   {
@@ -30,6 +30,18 @@ export default [
     video: 'easy.mp4',
   },
   {
+    id: 'stg-synergy',
+    title: 'STG SYNERGY',
+    path: '/stg-synergy',
+    video: 'easy.mp4',
+  },
+  {
+    id: 'sting-influence-network',
+    title: 'S.I.N. (STING INFLUENCE NETWORK)',
+    path: '/sting-influence-network',
+    video: 'easy.mp4',
+  },
+  {
     id: 'bleeping-easy',
     title: 'STING COLLECTIVE',
     path: '/sting-collective',
@@ -39,6 +51,18 @@ export default [
     id: 'bleeping-easy',
     title: 'STINGMAG',
     path: '/projects/bleeping-easy',
+    video: 'easy.mp4',
+  },
+  {
+    id: 'sting-awards',
+    title: 'STING AWARDS',
+    path: '/awards',
+    video: 'easy.mp4',
+  },
+  {
+    id: 'sting-festival',
+    title: 'STING FESTIVAL AFRICA',
+    path: '/festival',
     video: 'easy.mp4',
   },
 ];

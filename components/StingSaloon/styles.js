@@ -354,6 +354,27 @@ export const ShopCardMeta = styled.p`
   opacity: 0.78;
 `;
 
+export const ShopCardButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  border-radius: 999px;
+  border: 1px solid ${props => props.theme.colors.white};
+  background: transparent;
+  color: ${props => props.theme.colors.white};
+  text-decoration: none;
+  font-weight: 700;
+  width: fit-content;
+  transition: background 0.2s ease, color 0.2s ease;
+  margin-top: 8px;
+
+  &:hover {
+    background: ${props => props.theme.colors.white};
+    color: #111;
+  }
+`;
+
 export const StorySection = styled.section`
   margin: 0 0 100px;
 `;

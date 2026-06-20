@@ -10,7 +10,7 @@ const SiteOfTheDay = () => {
 
   return (
     <Container onMouseEnter={addCursorBorder} onMouseLeave={removeCursorBorder}>
-      <Link href="https://www.thestinginc.com/store" passHref>
+      <Link href="https://www.store.thestinginc.com/" passHref>
         <a target="_blank">
           <svg width="53.08" height="171.358" viewBox="0 0 53.08 171.358">
             <path fill={theme.text} d="M0 0h53.08v171.358H0z"></path>
