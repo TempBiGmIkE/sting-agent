@@ -443,35 +443,85 @@ export const PortfolioTrack = styled.h4`
 `;
 
 export const CTASection = styled.section`
-  padding: 80px 24px;
-  max-width: 1360px;
-  margin: 0 auto;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(88px, 13vw, 190px) 24px;
+  margin: 80px 24px 120px;
   text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: radial-gradient(
+      ellipse at 50% 115%,
+      rgba(234, 40, 30, 0.28),
+      transparent 58%
+    ),
+    #151111;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: -50%;
+    left: 50%;
+    width: min(65vw, 760px);
+    aspect-ratio: 1;
+    border: 1px solid rgba(234, 40, 30, 0.24);
+    border-radius: 50%;
+    content: '';
+    transform: translateX(-50%);
+  }
 
   ${media.tablet`
-    padding: 60px 24px;
+    margin: 48px 16px 80px;
+    padding: 88px 24px;
+
+    &::before {
+      width: 100vw;
+    }
   `}
 `;
 
 export const CTATitle = styled.h2`
-  font-size: clamp(2rem, 3vw, 3.5rem);
-  margin: 0 0 24px;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto 28px;
+  font-size: clamp(3rem, 8vw, 8rem);
+  line-height: 0.9;
+  letter-spacing: -0.06em;
   font-family: 'Presicav', sans-serif;
 `;
 
 export const CTAText = styled.p`
-  font-size: 1.1rem;
+  max-width: 660px;
+  margin: 0 auto 38px;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  line-height: 1.6;
   opacity: 0.85;
-  margin: 0 0 40px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
 `;
 
 export const CTAButtons = styled.div`
+  position: relative;
   display: flex;
-  gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
+
+  a {
+    gap: 18px;
+    min-height: 64px;
+    padding: 18px 30px;
+    border-radius: 0;
+  }
+`;
+
+export const CTAFootnote = styled.p`
+  margin-top: 24px;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: calibre, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  ${media.tablet`
+    font-size: 0.68rem;
+    line-height: 1.6;
+  `}
 `;

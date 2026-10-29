@@ -5,6 +5,7 @@ import FeaturedSection from '../components/Home/FeaturedProject';
 import AboutSection from '../components/Home/About';
 import ContactSection from '../components/Home/Contact';
 import Footer from '../components/Home/Footer';
+import NewsletterWaitlist from '../components/NewsletterWaitlist/NewsletterWaitlist';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <AboutSection />
       <ContactSection />
       <Footer />
+      <NewsletterWaitlist />
     </>
   );
 };

@@ -3,4 +3,5 @@ export default {
   awwwards: 200,
   menu: 1000,
   cursor: 1100,
+  newsletter: 1200,
 };
