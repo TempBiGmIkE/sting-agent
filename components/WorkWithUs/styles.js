@@ -44,26 +44,19 @@ export const ModalContent = styled(motion.div)`
   border-radius: 8px;
   width: 100%;
   max-width: 1000px;
-  max-height: 90vh;
-  overflow-y: auto;
+  height: 90vh;
+  max-height: 900px;
+  overflow: hidden;
   position: relative;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  padding: 48px;
-
-  @media (max-width: 768px) {
-    padding: 32px 24px;
-  }
-
-  @media (max-width: 480px) {
-    padding: 24px 16px;
-  }
 `;
 
 export const ModalCloseButton = styled.button`
   position: absolute;
-  top: 24px;
-  right: 24px;
-  background: none;
+  z-index: 1;
+  top: 12px;
+  right: 12px;
+  background: white;
   border: none;
   font-size: 32px;
   cursor: pointer;
@@ -71,6 +64,7 @@ export const ModalCloseButton = styled.button`
   padding: 0;
   width: 40px;
   height: 40px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,6 +73,14 @@ export const ModalCloseButton = styled.button`
   &:hover {
     transform: scale(1.1);
   }
+`;
+
+export const IntakeFormFrame = styled.iframe`
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: white;
 `;
 
 export const ModalHeader = styled.div`
@@ -129,8 +131,11 @@ export const Tab = styled.button`
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  color: ${props => (props.active ? props.theme.colors?.red || '#EA281E' : '#999')};
-  border-bottom: 3px solid ${props => (props.active ? props.theme.colors?.red || '#EA281E' : 'transparent')};
+  color: ${props =>
+    props.active ? props.theme.colors?.red || '#EA281E' : '#999'};
+  border-bottom: 3px solid
+    ${props =>
+      props.active ? props.theme.colors?.red || '#EA281E' : 'transparent'};
   transition: all 0.3s ease;
   white-space: nowrap;
   text-transform: uppercase;

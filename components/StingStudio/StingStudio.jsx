@@ -45,6 +45,7 @@ import {
   CTATitle,
   CTAText,
   CTAButtons,
+  CTAFootnote,
 } from './styles';
 
 const featuredSessions = [
@@ -616,18 +617,22 @@ const StingStudio = () => (
       </Section>
     </AnimateOnScreen>
 
-    {/* CTA Section */}
     <CTASection>
-      <CTATitle>Ready to Transform Your Creative Journey?</CTATitle>
+      <Eyebrow>For the ones making what&apos;s next</Eyebrow>
+      <CTATitle>Make noise. Find your people.</CTATitle>
       <CTAText>
-        Join Sting Studio today and become part of a thriving community of
-        artists, producers, and creative visionaries. Let&apos;s build something
-        extraordinary together.
+        Meet UNGATED: a new way to put unreleased music in front of real
+        listeners, build a crew of superfans, and discover what moves people
+        before the algorithm catches on.
       </CTAText>
       <CTAButtons>
-        <PrimaryButton href="#signup">Start Your Journey</PrimaryButton>
-        <SecondaryButton href="#tour">Take the Tour</SecondaryButton>
+        <PrimaryButton href="/ungated">
+          Step into UNGATED <span aria-hidden="true">↗</span>
+        </PrimaryButton>
       </CTAButtons>
+      <CTAFootnote>
+        Independent artists. Early access. Discovery led by people.
+      </CTAFootnote>
     </CTASection>
   </Page>
 );
